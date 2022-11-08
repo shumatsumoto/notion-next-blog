@@ -1,9 +1,22 @@
+import { GetStaticProps } from "next";
 import Card from "../components/Card";
 import Layout from "../components/Layout";
 import { siteConfig } from "../site.config";
+import { fetchPages } from "../utils/notion";
 import { sampleCards } from "../utils/sample";
 
-export default function Home() {
+export const getStaticProps: GetStaticProps = async () => {
+  const { results } = await fetchPages();
+  return {
+    props: {
+      pages: results ? results : [],
+    },
+    revalidate: 10,
+  };
+};
+
+export default function Home({ pages }) {
+  console.log(pages);
   return (
     <Layout>
       <div className="pt-12">
