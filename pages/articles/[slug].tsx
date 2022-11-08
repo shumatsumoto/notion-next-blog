@@ -1,9 +1,20 @@
+import { GetServerSideProps } from "next";
 import Image from "next/image";
 import React from "react";
 import ArticleMeta from "../../components/ArticleMeta";
 import Layout from "../../components/Layout";
+import { Params } from "../../types/types";
 
-const Article = () => {
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const { slug } = ctx.params as Params;
+  return {
+    props: {
+      slug: slug,
+    },
+  };
+};
+
+const Article = ({ slug }) => {
   return (
     <Layout>
       <article className="w-full">
@@ -13,7 +24,7 @@ const Article = () => {
         </div>
 
         {/* article */}
-        <div className="my-12">article</div>
+        <div className="my-12">article {slug}</div>
       </article>
     </Layout>
   );
