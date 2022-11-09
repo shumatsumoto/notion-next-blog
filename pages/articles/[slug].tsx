@@ -4,8 +4,8 @@ import ArticleMeta from "../../components/ArticleMeta";
 import Layout from "../../components/Layout";
 import { ArticleProps, Params } from "../../types/types";
 import { fetchBlocksByPageId, fetchPages } from "../../utils/notion";
-import { sampleCards } from "../../utils/sample";
 import { getText } from "../../utils/property";
+import { sampleCards } from "../../utils/sample";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const { results } = await fetchPages({});
@@ -39,7 +39,10 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   };
 };
 
-const Article: NextPage<ArticleProps> = ({ page }) => {
+const Article: NextPage<ArticleProps> = ({ page, blocks }) => {
+  console.log("page", page);
+  console.log("blocks", blocks);
+  return <></>;
   return (
     <Layout>
       <article className="w-full">
