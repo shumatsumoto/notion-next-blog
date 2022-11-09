@@ -31,8 +31,7 @@ main {
   @apply border-l-4 border-solid border-gray-700 px-4 py-2;
 }
 .nbr-block-code {
-  @apply text-sm px-6 py-4;
-  background-color: #eee;
+  @apply text-sm;
 }
 /* Hide only scrollbar */
 .nbr-block-code pre::-webkit-scrollbar {
