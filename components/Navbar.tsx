@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { siteConfig } from "../site.config";
+import Breadcrumb from "./Breadcrumb";
 
 const Navbar = () => {
   return (
@@ -11,11 +12,12 @@ const Navbar = () => {
           aria-label="breadcrumb"
         >
           <Link href="/">
-            <div className="text-gray-500 hover:text-gray-600">
+            <span className="text-gray-500 hover:text-gray-600">
               {siteConfig.title}
-            </div>
+            </span>
           </Link>
           {/* Breadcrumb */}
+          <Breadcrumb />
         </div>
       </div>
     </nav>
