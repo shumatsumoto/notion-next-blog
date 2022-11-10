@@ -4,6 +4,20 @@
 
 h1 {
   @apply font-semibold leading-tight text-4xl mt-0 mb-2;
+  position: relative;
+  padding-left: 65px;
+}
+h1::before {
+  content: "";
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url("/chikawa01.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
 h2 {
   @apply font-semibold leading-tight text-3xl mt-0 mb-2;
