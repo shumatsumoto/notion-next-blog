@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from "next";
+import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +7,32 @@ import Layout from "../../components/Layout";
 import { siteConfig } from "../../site.config";
 import { IndexProps, Params } from "../../types/types";
 import { fetchPages } from "../../utils/notion";
+import { getMultiSelect } from "../../utils/property";
 import { sampleCards } from "../../utils/sample";
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const { results }: { results: Record<string, any>[] } = await fetchPages({});
+
+  const pathSet: Set<string> = new Set();
+  for (const page of results) {
+    for (const tag of getMultiSelect(page.properties.tags.multi_select)) {
+      pathSet.add(tag);
+    }
+  }
+
+  const paths = Array.from(pathSet).map((tag) => {
+    return {
+      params: {
+        tag: tag,
+      },
+    };
+  });
+
+  return {
+    paths: paths,
+    fallback: "blocking",
+  };
+};
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { tag } = ctx.params as Params;
