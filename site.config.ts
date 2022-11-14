@@ -1,6 +1,6 @@
 export const siteConfig = {
   title: "My Recipe",
-  twitterUrl: "",
+  twitterUrl: "https://twitter.com/shumatsumoto328",
   instagramUrl: "https://www.instagram.com/shumatsumoto0328/",
-  githubUrl: "https://github.com/shumatsumoto",
+  githubUrl: "",
 };
