@@ -9,11 +9,11 @@ h1 {
 }
 h1::before {
   content: "";
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 0;
   background-image: url("/chikawa01.png");
   background-size: contain;
   background-repeat: no-repeat;
