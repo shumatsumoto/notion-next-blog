@@ -5,7 +5,7 @@
 h1 {
   @apply font-semibold leading-tight text-4xl mt-0 mb-2;
   position: relative;
-  padding-left: 65px;
+  padding-left: 55px;
 }
 h1::before {
   content: "";
