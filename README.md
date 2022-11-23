@@ -25,7 +25,7 @@ https://my-recipe-0328.vercel.app/
 
 ## :pencil2: Overview
 
-Blog development with NotionAPI + Next.js + TypeScript
+Blog development with NotionAPI + Next.js + TypeScript.
 
 ## :hammer: Requirement
 
