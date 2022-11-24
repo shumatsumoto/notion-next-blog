@@ -1,34 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/11171872/203345580-40a14fa9-b1f0-4c29-a042-138ff78f7d9b.jpg" width="500">
+</div>
 
-## Getting Started
+<h1 align="center">Notion Next Blog</h1>
 
-First, run the development server:
+<div align="center">
+  <a href="https://nextjs.org/">
+    <img src="https://user-images.githubusercontent.com/11171872/113247237-92a71b80-92f5-11eb-8f09-6047f4c4b441.png" height="35">
+  </a>&nbsp;
+  <a href="https://developers.notion.com/">
+    <img src="https://user-images.githubusercontent.com/11171872/203363958-370efa85-c026-4c46-ada0-c9ad6e216095.png" height="35">
+  </a>&nbsp;
+  <a href="https://vercel.com/docs">
+    <img src="https://user-images.githubusercontent.com/11171872/113248066-334a0b00-92f7-11eb-86d9-cd8030b50c0e.png" height="35">
+  </a>&nbsp;
+  <a href="https://tailwindcss.com/">
+    <img src="https://user-images.githubusercontent.com/11171872/203363611-c98d9780-5fdc-4fb7-9214-dda32d8f8dfb.png" height="35">
+  </a>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
+## :computer: URL
+
+https://my-recipe-0328.vercel.app/
+
+## :pencil2: Overview
+
+Blog development with NotionAPI + Next.js + TypeScript.
+
+## :hammer: Requirement
+
+- macOS
+- Next.js 10.0.6
+- Notion API
+- Vercel
+- Tailwind CSS
+
+## :pushpin: Usage
+
+Git clone
+```
+$ git clone https://github.com/shumatsumoto/notion-next-blog.git
+```
+Move to directory
+```
+$ cd notion-next-blog
+```
+Install the library
+```
+$ npm install
+```
+Launch a local server
+```
+$ npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Access URL： 
+http://localhost:3000
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Build（Deploy files）
+```
+$ npm run build
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## :railway_car: Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Article posting
+- Tab Sort
 
-## Learn More
+## :green_book: Reference
 
-To learn more about Next.js, take a look at the following resources:
+- [【NotionをCMSに】NotionAPI + Next.js + TypeScript でブログ開発〜デプロイまで](https://www.udemy.com/course/notion-next-blog/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## :hatching_chick: Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Github](https://github.com/shumatsumoto)
+- [Qiita](https://qiita.com/ShuMatsumoto)
