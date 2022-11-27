@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/11171872/204143266-d1d08a96-06a0-4899-8611-e54270b431f9.mov" width="500">
+  <img src="https://user-images.githubusercontent.com/11171872/204143475-f5459adb-cd63-4a12-9b79-901626679040.gif" width="500">
 </div>
 
 <h1 align="center">Notion Next Blog</h1>
