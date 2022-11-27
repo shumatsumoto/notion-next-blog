@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/11171872/204143475-f5459adb-cd63-4a12-9b79-901626679040.gif" width="500">
+  <img src="https://user-images.githubusercontent.com/11171872/204143475-f5459adb-cd63-4a12-9b79-901626679040.gif" width="430">&nbsp;&nbsp;
+  <img src="https://user-images.githubusercontent.com/11171872/204144208-3ab7561c-e791-4c94-9d64-01cf67449122.gif" width="320">
 </div>
 
 <h1 align="center">Notion Next Blog</h1>
