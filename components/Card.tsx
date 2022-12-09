@@ -20,6 +20,7 @@ const Card: FC<CardProps> = ({ page }) => {
               width={400}
               height={225}
               quality={30}
+              unoptimized
             />
           </div>
 

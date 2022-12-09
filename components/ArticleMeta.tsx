@@ -16,6 +16,7 @@ const ArticleMeta: FC<ArticleMetaProps> = ({ page }) => {
         width={640}
         height={360}
         quality={50}
+        unoptimized
       />
 
       {/* page name */}
