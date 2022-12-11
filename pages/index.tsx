@@ -29,12 +29,12 @@ const Home: NextPage<IndexProps> = ({ pages }) => {
             .slice(0, card)}
         </div>
         {card < pages.length ? (
-          <div className="text-center my-8">
+          <div className="text-center mb-8">
             <button
-              className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+              className="bg-transparent text-blue-700 font-semibold py-2 w-full text-lg"
               onClick={() => setCard(card + displayCount)}
             >
-              See More
+              See more
             </button>
           </div>
         ) : (
